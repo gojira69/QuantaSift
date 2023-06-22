@@ -26,6 +26,9 @@ The Python script for Flask server can be found in the Scripts folder along with
 # PreRequisites
 Read Assumptions.md
 
+# How To Use
+Pull the Repo to your local machine. Run the python script "Playlist" in the Scripts folder to use the playlist feature of the website. Open the Home page on your default browser which is in the "Main Pages" folder.
+
 
 # Contributors
 This project was made by me and Ishan Gupta. You can find more about us from the "About Us" page of the website. 
