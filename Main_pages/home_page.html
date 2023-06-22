@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../CSS/navbar.css" rel="stylesheet" />
+    <style>
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .greetings_element {
+        box-sizing: border-box;
+        margin-block: 0px;
+        font-family: "Phage Rough";
+        font-size: 50px;
+        cursor: default;
+        font-weight: bold;
+        margin-top: 200px;
+        color: rgb(0, 0, 0);
+      }
+
+      .thumbnail-container-topartists {
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: column;
+        background-image: url("../artists_and_albums_pics/imgdrgns.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid #dbbf21;
+        border-radius: 30px;
+        height: 500px;
+        padding: 2px;
+        width: 400px;
+        margin-right: 12;
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        right: 10%;
+      }
+
+      .thumbnail-container-topalbums {
+        color: white;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: column;
+        display: flex;
+        background-image: url("../artists_and_albums_pics/smokeandmirrors.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid #dbbf21;
+        border-radius: 30px;
+        height: 500px;
+        padding: 2px;
+        width: 400px;
+        cursor: pointer;
+        margin-right: 12;
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+      }
+      .thumbnail-container-topsongs {
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: column;
+        background-image: url("../Songs_cover/STAY.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid #dbbf21;
+        border-radius: 30px;
+        height: 500px;
+        padding: 2px;
+        width: 400px;
+        cursor: default;
+        position: absolute;
+        top: 40%;
+        right: 39.5%;
+        transition: background-color 0.5s ease-in;
+      }
+      .all_div:hover {
+        transform: scale(1.1);
+        background-image: url();
+      }
+      body {
+        background-image: url("bg.gif");
+        background-size: cover;
+      }
+
+      h1 {
+        font-family: "Conthrax";
+        color: white;
+        font-size: 60px;
+      }
+      ol {
+        z-index: -1;
+        font-family: "Conthrax";
+        color: #dbbf21;
+        font-size: 28px;
+      }
+
+      footer * {
+        background: #000000;
+        text-align: center;
+        display: inline-block;
+        line-height: 0.2;
+        margin-top: 0;
+        margin-right: 36px;
+        margin-bottom: -10;
+        height: 5px;
+        vertical-align: top;
+        z-index: -1;
+      }
+      
+      .tag{
+        position: absolute;
+        padding-top: 10px;
+        bottom: 0;
+      }
+      
+      .tag a {
+        color: #ffc60b;
+        text-decoration: none;
+        font-family: Conthrax;
+      }
+      
+      h5{
+        color:#ffc60b;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div_top">
+      <img src="../Main_pages/QuantasiftLogo.png" />
+
+      <a href="../Main_pages/home_page.html"
+        ><h3 class="home_page_header" style="color: red;">Home</h3></a
+      >
+      <a href="../Main_pages/Search_page.html"
+        ><h3 class="search_page_header"> &#128269; Search</h3></a
+      >
+      <a href="../Main_pages/artists_home_page.html"
+        ><h3 class="artists_page_header">Artists Page</h3></a
+      >
+      <a href="../Main_pages/artists_spotlight.html"
+        ><h3 class="artist_spotlight_header">Spotlight</h3></a
+      >
+      <a href="../Main_pages/playlist.html">
+        <h3 class="playlist_header">Playlist</h3></a
+      >
+      <a href="../Main_pages/about_us.html"
+        ><h3 class="about_us_header">About Us</h3></a
+      >
+    </div>
+
+    <hr />
+    <h1
+      align="center"
+      style="font-size: 60px; margin-top: 200px; color: #dbbf21"
+    >
+      Top Charts
+    </h1>
+    <div class="thumbnail-container-topsongs all_div">
+      <h1 align="center">Top Songs</h1>
+      <ol type="1">
+        <li>Adventure of a Lifetime</li>
+        <li>Radioactive</li>
+        <li>Bhool Bhulaiyaa 2 Title Track</li>
+      </ol>
+    </div>
+    <div class="thumbnail-container-topalbums all_div">
+      <h1 align="center">Top Albums</h1>
+      <ol type="1">
+        <li><a href="../Album_Pages/Equal.html">=</a></li>
+        <li><a href="../Album_Pages/Evolve.html">Evolve</a></li>
+        <li><a href="../Album_Pages/13Reasons.html">13 Reasons Why(Season 3)</a></li>
+      </ol>
+    </div>
+    <div class="thumbnail-container-topartists all_div">
+      <h1 align="center">Top Artists</h1>
+      <ol type="1">
+        <li><a href="../Artists_Pages/coldplay.html">Coldplay</a></li>
+        <li><a href="../Artists_Pages/5secondsofsummer.html">5 Seconds of Summer</a></li>
+        <li>
+          <a href="../Artists_Pages/imagine dragons.html">Imagine Dragons</a>
+        </li>
+      </ol>
+    </div>
+
+    <div class="tag">
+      <footer>
+        <ul>
+          <li><a href="../Main_pages/home_page.html">Home</a></li>
+          <li><a href="../Main_pages/about_us.html">About</a></li>
+          <li>
+            <a href="../Main_pages/User Gift.mp4"
+              >A surprise for our users! &#x1F601;</a
+            >
+          </li>
+        </ul>
+        <h5>Created by Sriharsha and Ishan&copy; 2023</h5>
+      </footer>
+    </div>
+  </body>
+</html>

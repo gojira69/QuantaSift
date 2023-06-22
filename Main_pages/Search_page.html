@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="../CSS/navbar.css" rel="stylesheet">
+  <script src="../JS/search_api.js" async></script>
+  <style>
+    body {
+      background-size: cover;
+      background-color: black;
+    }
+
+
+    .search {
+      background-color: black;
+      padding-top: 100px;
+    }
+
+    .filter_div {
+      font-family: 'Conthrax';
+      color: rgb(190, 192, 45);
+      font-size: 15px;
+    }
+
+    .search_bar {
+      border-radius: 15px;
+      padding-right: 500px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      cursor: text;
+      transition: opacity 0.15s;
+      border: none;
+      height: 30px;
+      padding-top: 1px;
+      padding-left: 20px;
+      padding-bottom: 1px;
+      margin-left: 300px;
+      margin-top: 20px;
+    }
+    #duration {
+      border-radius: 7px;
+      padding-right: 30px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      cursor: text;
+      transition: opacity 0.15s;
+      border: none;
+      height: 20px;
+      padding-top: 1px;
+      padding-left: 20px;
+      padding-bottom: 1px;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    .dur_label
+    {
+      margin-left: 100px;
+    }
+    .search_button
+    {
+      border-radius: 15px;
+      height: 50px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    .all_button {
+      border-radius: 15px;
+      background-color: rgb(203, 211, 47);
+      color: rgb(0, 0, 0);
+      border: none;
+      height: 25px;
+      cursor: grabbing;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      margin-top: 20px;
+    }
+
+    .all_button:hover {
+      opacity: 0.7;
+    }
+
+    th {
+      color: rgb(190, 192, 45);
+      font-size: 20px;
+      font-family: 'Conthrax';
+      text-align: center;
+    }
+
+    td {
+      color: rgb(190, 192, 45);
+      text-align: center;
+      font-size: 20px;
+      font-family: 'Conthrax';
+    }
+
+    table {
+      width: 1910px;
+      border-collapse: collapse;
+    }
+
+    footer * {
+      background: #000000;
+      text-align: center;
+      display: inline-block;
+      line-height: 0.2;
+      margin-top: 0;
+      margin-right: 36px;
+      margin-bottom: -10;
+      height: 5px;
+      vertical-align: top;
+      z-index: -1;
+    }
+    
+    .tag{
+      position: absolute;
+      bottom: 0;
+    }
+    
+    .tag a {
+      color: #ffc60b;
+      text-decoration: none;
+      font-family: Conthrax;
+    }
+    
+    h5{
+      color:#ffc60b;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div_top">
+    <img src="../Main_pages/QuantasiftLogo.png" />
+
+    <a href="../Main_pages/home_page.html"
+      ><h3 class="home_page_header">Home</h3></a
+    >
+    <a href="../Main_pages/Search_page.html"
+      ><h3 class="search_page_header" style="color: red;"> &#128269; Search</h3></a
+    >
+    <a href="../Main_pages/artists_home_page.html"
+      ><h3 class="artists_page_header">Artists Page</h3></a
+    >
+    <a href="../Main_pages/artists_spotlight.html"
+      ><h3 class="artist_spotlight_header">Spotlight</h3></a
+    >
+    <a href="../Main_pages/playlist.html">
+      <h3 class="playlist_header">Playlist</h3></a
+    >
+    <a href="../Main_pages/about_us.html"
+      ><h3 class="about_us_header">About Us</h3></a
+    >
+  </div>
+
+  <hr />
+
+  <div class="search">
+    <input class="search_bar" placeholder="Find artists and albums.."></input>
+    <button class="search_button all_button" onclick="fetch_and_display();">Search</button>
+  </div>
+  <div class="filter_div">
+    <input type="checkbox" id="hide-explicit" name="hide-explicit" onclick="filter_ex();">
+    <label for="hide-explicit">Hide Explicit</label>
+    <label for="duration" class="dur_label">Max. Duration:</label>
+    <input id="duration" type="number" name="duration" placeholder="Enter duration(in minutes):">
+    <button class="filter all_button" onclick="filter();">Filter</button>
+    <button class="clear_filter all_button" onclick="clear_filter();">Clear Filter</button>
+  </div>
+
+  <div class="tag">
+    <footer>
+      <ul>
+        <li><a href="../Main_pages/home_page.html">Home</a></li>
+        <li><a href="../Main_pages/about_us.html">About</a></li>
+        <li><a href="../Main_pages/User Gift.mp4">A surprise for our users! &#x1F601;</a></li>
+      </ul>
+    <h5>Created by Sriharsha and Ishan&copy; 2023</h5>
+    </footer>
+  </div>
+</body>
+
+</html>

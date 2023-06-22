@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../CSS/navbar.css" rel="stylesheet" />
+    <link href="../CSS/footer.css" rel="stylesheet" />
+    <script src="../JS/reviews.js"></script>
+    <script src="../JS/countdown.js"></script>
+    <script src="../JS/Typing_Effect.js" async></script>
+    <style>
+      body {
+        background-color: #000000;
+      }
+
+      h1 {
+        font-family: "Conthrax";
+        font-size: 80px;
+        text-align: center;
+        color: #ffc60b;
+        font-size: 400%;
+      }
+      img {
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .img:hover {
+        opacity: 0.1;
+        filter: brightness(70%);
+      }
+
+      .cover-page {
+        text-align: center;
+        font-family: Conthrax;
+        padding: 50px;
+        color: #ffc60b;
+        padding-top: 100px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      .cover-page img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        transition: transform 0.2s;
+      }
+
+      .cover-page img:hover {
+        transform: scale(1.2);
+      }
+
+      .cover-page h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+
+      .cover-page p {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+        text-align: justify;
+        cursor: pointer;
+      }
+
+      td:hover {
+        transform: scale(1.1);
+        transition: all 300ms;
+      }
+
+      .scrollable {
+        overflow: auto;
+      }
+
+      h2 {
+        color: #ffc60b;
+        text-align: center;
+        font-family: Conthrax;
+        font-size: xx-large;
+      }
+
+      h3 {
+        color: white;
+        font-size: small;
+        text-align: center;
+        font-family: Conthrax;
+        font-size: 100%;
+      }
+
+      ::-webkit-scrollbar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 12px;
+        background-color: transparent;
+        z-index: -1;
+      }
+
+      table {
+        margin: auto;
+        width: 100%;
+      }
+
+      input[type="radio"].star {
+        display: none;
+      }
+
+      label.star {
+        display: inline-block;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        background-color: #000000;
+        border-radius: 50%;
+      }
+
+      label.star:before {
+        content: "\2605";
+        display: block;
+        text-align: center;
+        line-height: 25px;
+        font-size: 20px;
+        color: white;
+      }
+
+      input[type="radio"].star:checked + label.star {
+        background-color: #ffc60b;
+      }
+
+      .review_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+      }
+
+      label {
+        font-family: "Conthrax";
+        color: #ffc60b;
+      }
+
+      button {
+        font-family: "Conthrax";
+        border-radius: 8px;
+        color: black;
+        background-color: #ffc60b;
+      }
+
+      table tr {
+        color: #ffc60b;
+        font-family: "Conthrax";
+      }
+
+      #countdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      #countdown div {
+        margin: 0 10px;
+        text-align: center;
+        background-color: #000000;
+        color: #fff;
+        font-family: "Conthrax";
+        border-radius: 5px;
+        padding: 20px;
+      }
+
+      #countdown div span {
+        font-size: 48px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      #countdown div div {
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div_top">
+      <img src="../Main_pages/QuantasiftLogo.png" />
+
+      <a href="../Main_pages/home_page.html"
+        ><h3 class="home_page_header">Home</h3></a
+      >
+      <a href="../Main_pages/Search_page.html"
+        ><h3 class="search_page_header"> &#128269; Search</h3></a
+      >
+      <a href="../Main_pages/artists_home_page.html"
+        ><h3 class="artists_page_header">Artists Page</h3></a
+      >
+      <a href="../Main_pages/artists_spotlight.html"
+        ><h3 class="artist_spotlight_header" style="color: red;">Spotlight</h3></a
+      >
+      <a href="../Main_pages/playlist.html">
+        <h3 class="playlist_header">Playlist</h3></a
+      >
+      <a href="../Main_pages/about_us.html"
+        ><h3 class="about_us_header">About Us</h3></a
+      >
+    </div>
+
+    <hr />
+
+    <div class="cover-page">
+      <img
+        src="../artists_and_albums_pics/ed_sheeran_spotlight.jpg"
+        alt="Artist Name"
+        align="center"
+      />
+      <h2>Ed Sheeeran</h2>
+      <h3 id="typing-effect">
+      </h3>
+      <h2>His upcoming album - "Subtract" is releasing on 5th of May, 2023.</h2>
+    </div>
+
+    <h1>Countdown Timer</h1>
+    <div id="countdown">
+      <div>
+        <span id="days"></span>
+        <div>Days</div>
+      </div>
+      <div>
+        <span id="hours"></span>
+        <div>Hours</div>
+      </div>
+      <div>
+        <span id="minutes"></span>
+        <div>Minutes</div>
+      </div>
+      <div>
+        <span id="seconds"></span>
+        <div>Seconds</div>
+      </div>
+    </div>
+
+    <hr />
+    <hr />
+
+    <div class="review_table">
+      <table id="reviewsTable">
+        <thead>
+          <tr>
+            <th>UserName</th>
+            <th>Rating</th>
+            <th>Review</th>
+            <th>Artist</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <h1>PRITAM</h1>
+    <div class="review_image">
+      <img
+        src="../artists_and_albums_pics/pritam.jpeg"
+        style="height: 300px; width: 480px"
+      />
+    </div>
+    <form>
+      <label>UserName:</label>
+      <input type="text" id="name1" /><br />
+      <label>Rating:</label>
+      <input
+        type="radio"
+        name="rating1"
+        value="1"
+        class="star"
+        id="star11"
+      /><label class="star" for="star11"></label>
+      <input
+        type="radio"
+        name="rating1"
+        value="2"
+        class="star"
+        id="star21"
+      /><label class="star" for="star21"></label>
+      <input
+        type="radio"
+        name="rating1"
+        value="3"
+        class="star"
+        id="star31"
+      /><label class="star" for="star31"></label>
+      <input
+        type="radio"
+        name="rating1"
+        value="4"
+        class="star"
+        id="star41"
+      /><label class="star" for="star41"></label>
+      <input
+        type="radio"
+        name="rating1"
+        value="5"
+        class="star"
+        id="star51"
+      /><label class="star" for="star51"></label>
+      <label>Review:</label>
+
+      <textarea id="review1"></textarea><br />
+      <button type="button" onclick="submitReview1()">Submit</button>
+      <script></script>
+    </form>
+
+    <h1>IMAGINE DRAGONS</h1>
+    <div class="review_image">
+      <img
+        src="../artists_and_albums_pics/imgdrgns.jpeg"
+        style="height: 400px; width: 400px"
+      />
+    </div>
+    <form>
+      <label>UserName:</label>
+      <input type="text" id="name2" /><br />
+      <label>Rating:</label>
+      <input
+        type="radio"
+        name="rating2"
+        value="1"
+        class="star"
+        id="star12"
+      /><label class="star" for="star12"></label>
+      <input
+        type="radio"
+        name="rating2"
+        value="2"
+        class="star"
+        id="star22"
+      /><label class="star" for="star22"></label>
+      <input
+        type="radio"
+        name="rating2"
+        value="3"
+        class="star"
+        id="star32"
+      /><label class="star" for="star32"></label>
+      <input
+        type="radio"
+        name="rating2"
+        value="4"
+        class="star"
+        id="star42"
+      /><label class="star" for="star42"></label>
+      <input
+        type="radio"
+        name="rating2"
+        value="5"
+        class="star"
+        id="star52"
+      /><label class="star" for="star52"></label>
+      <label>Review:</label>
+
+      <textarea id="review2"></textarea><br />
+      <button type="button" onclick="submitReview2()">Submit</button>
+      <script></script>
+    </form>
+
+    <h1>COLDPLAY</h1>
+    <div class="review_image">
+      <img
+        src="../artists_and_albums_pics/coldplay.jpg"
+        style="height: 400px; width: 400px"
+      />
+    </div>
+    <form>
+      <label>UserName:</label>
+      <input type="text" id="name3" /><br />
+      <label>Rating:</label>
+      <input
+        type="radio"
+        name="rating3"
+        value="1"
+        class="star"
+        id="star13"
+      /><label class="star" for="star13"></label>
+      <input
+        type="radio"
+        name="rating3"
+        value="2"
+        class="star"
+        id="star23"
+      /><label class="star" for="star23"></label>
+      <input
+        type="radio"
+        name="rating3"
+        value="3"
+        class="star"
+        id="star33"
+      /><label class="star" for="star33"></label>
+      <input
+        type="radio"
+        name="rating3"
+        value="4"
+        class="star"
+        id="star43"
+      /><label class="star" for="star43"></label>
+      <input
+        type="radio"
+        name="rating3"
+        value="5"
+        class="star"
+        id="star53"
+      /><label class="star" for="star53"></label>
+      <label>Review:</label>
+
+      <textarea id="review3"></textarea><br />
+      <button type="button" onclick="submitReview3()">Submit</button>
+      <script></script>
+    </form>
+
+    <h1>TWENTY ONE PILOTS</h1>
+    <div class="review_image">
+      <img
+        src="../artists_and_albums_pics/twnt one pilts.jpg"
+        style="height: 400px; width: 400px"
+      />
+    </div>
+    <form>
+      <label>UserName:</label>
+      <input type="text" id="name4" /><br />
+      <label>Rating:</label>
+      <input
+        type="radio"
+        name="rating4"
+        value="1"
+        class="star"
+        id="star14"
+      /><label class="star" for="star14"></label>
+      <input
+        type="radio"
+        name="rating4"
+        value="2"
+        class="star"
+        id="star24"
+      /><label class="star" for="star24"></label>
+      <input
+        type="radio"
+        name="rating4"
+        value="3"
+        class="star"
+        id="star34"
+      /><label class="star" for="star34"></label>
+      <input
+        type="radio"
+        name="rating4"
+        value="4"
+        class="star"
+        id="star44"
+      /><label class="star" for="star44"></label>
+      <input
+        type="radio"
+        name="rating4"
+        value="5"
+        class="star"
+        id="star54"
+      /><label class="star" for="star54"></label>
+      <label>Review:</label>
+
+      <textarea id="review4"></textarea><br />
+      <button type="button" onclick="submitReview4()">Submit</button>
+      <script></script>
+    </form>
+
+    <h1>ED SHEERAN</h1>
+    <div class="review_image">
+      <img
+        src="../artists_and_albums_pics/edsheeran.jpeg"
+        style="height: 400px; width: 400px"
+      />
+    </div>
+    <form>
+      <label>UserName:</label>
+      <input type="text" id="name5" /><br />
+      <label>Rating:</label>
+      <input
+        type="radio"
+        name="rating5"
+        value="1"
+        class="star"
+        id="star15"
+      /><label class="star" for="star15"></label>
+      <input
+        type="radio"
+        name="rating5"
+        value="2"
+        class="star"
+        id="star25"
+      /><label class="star" for="star25"></label>
+      <input
+        type="radio"
+        name="rating5"
+        value="3"
+        class="star"
+        id="star35"
+      /><label class="star" for="star35"></label>
+      <input
+        type="radio"
+        name="rating5"
+        value="4"
+        class="star"
+        id="star45"
+      /><label class="star" for="star45"></label>
+      <input
+        type="radio"
+        name="rating5"
+        value="5"
+        class="star"
+        id="star55"
+      /><label class="star" for="star55"></label>
+      <label>Review:</label>
+
+      <textarea id="review5"></textarea><br />
+      <button type="button" onclick="submitReview5()">Submit</button>
+      <script></script>
+    </form>
+
+    <h1>5 SECONDS OF SUMMER</h1>
+    <div class="review_image">
+      <img
+        src="../artists_and_albums_pics/5secofsum_coverpage.jpeg"
+        style="height: 400px; width: 500px"
+      />
+    </div>
+    <form>
+      <label>UserName:</label>
+      <input type="text" id="name6" /><br />
+      <label>Rating:</label>
+      <input
+        type="radio"
+        name="rating6"
+        value="1"
+        class="star"
+        id="star16"
+      /><label class="star" for="star16"></label>
+      <input
+        type="radio"
+        name="rating6"
+        value="2"
+        class="star"
+        id="star26"
+      /><label class="star" for="star26"></label>
+      <input
+        type="radio"
+        name="rating6"
+        value="3"
+        class="star"
+        id="star36"
+      /><label class="star" for="star36"></label>
+      <input
+        type="radio"
+        name="rating6"
+        value="4"
+        class="star"
+        id="star46"
+      /><label class="star" for="star46"></label>
+      <input
+        type="radio"
+        name="rating6"
+        value="5"
+        class="star"
+        id="star56"
+      /><label class="star" for="star56"></label>
+      <label>Review:</label>
+
+      <textarea id="review6"></textarea><br />
+      <button type="button" onclick="submitReview6()">Submit</button>
+      <script></script>
+    </form>
+
+    <hr />
+    <div class="tag">
+      <footer>
+        <ul>
+          <li><a href="../Main_pages/home_page.html">Home</a></li>
+          <li><a href="../Main_pages/about_us.html">About</a></li>
+          <li>
+            <a href="../Main_pages/User Gift.mp4"
+              >A surprise for our users! &#x1F601;</a
+            >
+          </li>
+        </ul>
+        <h5>Created by Sriharsha and Ishan&copy; 2023</h5>
+      </footer>
+    </div>
+  </body>
+</html>
