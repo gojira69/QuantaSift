@@ -31,4 +31,4 @@ Pull the Repo to your local machine. Run the python script "Playlist" in the Scr
 
 
 # Contributors
-This project was made by me and Ishan Gupta. You can find more about us from the "About Us" page of the website. 
+This project was made by [Harsha(Me)](https://github.com/gojira69) and [Ishan Gupta](https://github.com/Ishan-1). You can find more about us from the "About Us" page of the website. 
