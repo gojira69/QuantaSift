@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../CSS/navbar.css" rel="stylesheet">
+    <link href="../CSS/footer.css" rel="stylesheet">
+    <style>
+      td {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+      }
+      table {
+        border-spacing: 100px;
+      }
+      h1 {
+        font-family: "Conthrax";
+        font-size: 80px;
+        text-align: center;
+      }
+      img {
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .img:hover {
+        opacity: 0.1;
+        filter: brightness(70%);
+      }
+
+      .cover-page {
+        text-align: center;
+        font-family: "Conthrax";
+        padding: 50px;
+        padding-top: 80px;
+        background-color: #ffc60b;
+        color: black;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      .cover-page img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      .cover-page h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+
+      .cover-page p {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      img{
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      }
+
+      td:hover {
+        transform: scale(1.1);
+        transition: all 300ms;
+      }
+
+      .scrollable{
+        overflow: auto;
+      }
+
+      h2{
+        color: #ffc60b;
+        text-align: center;
+        font-family: "Conthrax";
+      }
+
+      h3{
+        color: white;
+        font-size: small;
+        text-align: center;
+        font-family: "Conthrax";
+      }
+
+
+      ::-webkit-scrollbar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 12px; /* Adjust the height as needed */
+        background-color: transparent;
+        z-index: -1; /* Set a negative z-index value to make the scrollbar appear below the footer */
+      }
+    </style>
+
+    <style>
+      body {
+       background-color: black;
+      }
+    </style>
+
+  </head>
+  <body>
+   <div class="div_top">
+      <img src="../Main_pages/QuantasiftLogo.png" />
+
+      <a href="../Main_pages/home_page.html"
+        ><h3 class="home_page_header">Home</h3></a
+      >
+      <a href="../Main_pages/Search_page.html"
+        ><h3 class="search_page_header"> &#128269; Search</h3></a
+      >
+      <a href="../Main_pages/artists_home_page.html"
+        ><h3 class="artists_page_header">Artists Page</h3></a
+      >
+      <a href="../Main_pages/artists_spotlight.html"
+        ><h3 class="artist_spotlight_header">Spotlight</h3></a
+      >
+      <a href="../Main_pages/playlist.html">
+        <h3 class="playlist_header">Playlist</h3></a
+      >
+      <a href="../Main_pages/about_us.html"
+        ><h3 class="about_us_header">About Us</h3></a
+      >
+    </div>
+
+    <hr />
+
+
+    <hr>
+
+
+    <div class="cover-page">
+      <img src="../artists_and_albums_pics/coldplay.jpg" alt="Artist Name" align="left" />
+      <h1>Coldplay</h1>
+      <h4> 63,595,503  Monthly Listeners<h4>
+    <h4>43,072,175 Followers</h4>
+        <p>Coldplay formed their band in late 1997 after Guy Berryman, Jonny Buckland, Will Champion and Chris Martin met at University College, London. The band have gone on to become one of the planet&#x201A;s most popular acts, selling more than 100 million copies of their seven Number One albums, which have spawned a string of classic hits including Yellow, Clocks, Fix You, Paradise, Viva La Vida, A Sky Full Of Stars and Orphans. They&#x201A;ve also filled their trophy cabinet with almost every major music award there is (including seven Grammys and nine BRITs). In December 2015, the band released A Head Full Of Dreams, their seventh album, which included the new fan favourites Adventure Of A Lifetime and Hymn For The Weekend. </p>
+    </div>
+
+    <hr>
+
+<!-- <br><br><br><br><br><br><br><br> -->
+
+
+    <div class="scrollable">
+      <table>
+        <tr>
+          <td>
+           <a href="../Album_Pages/A Rush of Blood to the Head.html"> <img src="../artists_and_albums_pics/arushofblood.jpeg"></a>
+            <h2>A Rush of Blood to the Head</h2>
+            <h3>2002</h3>
+          </td>
+          <td>
+            <a href="../Album_Pages/A Head Full of Dreams.html"> <img src="../artists_and_albums_pics/aheadfullofdreams.jpeg"></a>
+            <h2>A Head Full of Dreams</h2>
+            <h3>2015</h3>
+          </td>
+          <td>
+            <a href="../Album_Pages/Music of the Spheres.html"> <img src="../artists_and_albums_pics/musicofthespheres.jpg"></a>
+            <h2>Music of the Spheres</h2>
+            <h3>2021</h3>
+          </td>
+          <td>
+          <a href="../Album_Pages/GhostStories.html"> <img src="../artists_and_albums_pics/ghoststories.jpeg"></a>
+            <h2>Ghost Stories</h2>
+            <h3>2014</h3>
+          </td>
+          <td>
+           <a href="../Album_Pages/Mylo Xyloto.html"><img src="../artists_and_albums_pics/myloxyloto.jpeg"></a>
+            <h2>Mylo Xyloto</h2>
+            <h3>2011</h3>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <hr>
+    <div class="tag">
+    <footer>
+      <ul>
+        <li><a href="../Main_pages/home_page.html">Home</a></li>
+        <li><a href="../Main_pages/about_us.html">About</a></li>
+        <li><a href="../Main_pages/User Gift.mp4">A surprise for our users! &#x1F601;</a></li>
+      </ul>
+      <!-- <h5>&copy; 2023</h5> -->
+  <h5>Created by Sriharsha and Ishan&copy; 2023</h5>
+
+    </footer>
+  </div>
+
+  </body>
+</html>

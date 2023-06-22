@@ -1,0 +1,41 @@
+th
+    { 
+      color: rgb(190, 192, 45);
+      font-size: 25px;
+      font-family: 'Conthrax';
+    }
+    td
+    { 
+      color: rgb(190, 192, 45);
+      justify-content: center;
+      font-size: 24px;
+      font-family: 'Conthrax';
+    }
+    body {
+      background-color: black;
+      background-size:cover;
+    }
+    table
+    {
+      width: 1910px;
+    }
+    button {
+      border-radius: 15px;
+      background-color: rgb(203, 211, 47);
+      color: rgb(0, 0, 0);
+      border: none;
+      height: 25px;
+      cursor: grabbing;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      margin-top: 20px;
+      font-family: Conthrax;
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }

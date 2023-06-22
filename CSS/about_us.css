@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "Phage Rough";
+    src: url("Fonts/Phage\ Rough.otf");
+    font-size: 30;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Conthrax";
+    src: url("Fonts/conthrax-sb.otf");
+    font-size: small;
+    font-style: normal;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  .about_us_logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  .about_us_logo img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .about {
+    background-color: #000000;
+  }
+  
+  .about h1 {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    color: rgb(226, 230, 47);
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Conthrax;
+  }
+  
+  .about p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Conthrax;
+  }
+  
+  .creators {
+    padding: 50px;
+  }
+  
+  .creators h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: yellow;
+  }
+  
+  .creator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-right: 30px;
+  }
+  
+  .creator img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 30px;
+    border-radius: 50%;
+    margin-bottom: 0;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  
+  .creator h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: yellow;
+  }
+  
+  .creator p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0;
+    color: yellow;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 75px;
+    flex-wrap: wrap;
+  }
+  
+  h1 {
+    color: rgb(226, 230, 47);
+    font-family: Conthrax;
+  }
+  
+  h2 {
+    color: rgb(226, 230, 47);
+    font-family: Conthrax;
+    text-align: center;
+  }
+  h3
+  {
+    font-size: 20px;
+  }
+  
+  footer * {
+    background: #000000;
+    color: rgb(226, 230, 47);
+    display: inline-block;
+    line-height: 0.2;
+    margin-top: 0;
+    margin-right: 36px;
+    margin-bottom: -10;
+    height: 5px;
+    font-size: 20px;
+    vertical-align: top;
+  }
+  
+  a{
+    color: rgb(226, 230, 47);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Conthrax;
+  }
+
+  

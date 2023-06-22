@@ -1,0 +1,23 @@
+footer * {
+    background: #000000;
+    text-align: center;
+    display: inline-block;
+    line-height: 0.2;
+    margin-top: 0;
+    margin-right: 36px;
+    margin-bottom: -10;
+    height: 5px;
+    vertical-align: top;
+    z-index: -1;
+  }
+  
+  .tag a {
+    color: #ffc60b;
+    text-decoration: none;
+    font-family: Conthrax;
+  }
+  
+  h5{
+    color:#ffc60b;
+    text-align: center;
+  }
